@@ -1,0 +1,305 @@
+/*---------------------------------------------------------------
+GENERAL PAGE STYLING
+---------------------------------------------------------------*/
+
+/* Remove default spacing and use a readable font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the entire webpage */
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+background-color:wheat;
+color: black;
+
+}
+main {
+    text-align: center;
+}
+/*---------------------------------------------------------------   
+HEADER
+---------------------------------------------------------------*/
+
+header {
+background-color:black;
+color: white;
+padding: 20px;
+text-align: center}
+
+/* website title */
+header h1 {
+    margin-bottom: 100px;
+    text-align: center;
+}
+/*---------------------------------------------------------------
+NAVIGATION
+---------------------------------------------------------------*/
+.navbar-links {
+    align-items: left;
+}
+nav a {
+
+color: white;
+text-decoration: none;
+margin: 0 15px;
+font-weight: bold;
+font-style: italic;
+}
+
+nav {
+  background-color: black;
+  font-size: 20px;
+}
+
+
+/* Change link appearance when mouse is over it */
+nav a:hover {
+color: #ffd166;
+}
+
+/*---------------------------------------------------------------
+MAIN CONTENT
+----------------------------------------------------------------*/
+
+main {
+min-height: 70vh;}
+
+/*---------------------------------------------------------------
+HERO SECTION
+---------------------------------------------------------------*/
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #dff3ff;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+
+/* Button used on the home page */
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    color: white;
+    background-color: #123556;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------
+SERVICES
+---------------------------------------------------------------*/
+
+.services {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 25px;
+}
+
+/* Positioning the images */
+.faucetimage {
+    margin-left:150px;
+}
+
+.blockedtoilet {
+    margin-left:220px;
+}
+
+.plumbingleak {
+    margin-left:30px;
+}
+
+.cloggeddrain {
+    margin-left:150px;
+}
+
+.ceilingleakage {
+    margin-left:220px;
+}
+/* Put services cards next to each other */
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+/* Individual service card */
+.service-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 280px;
+
+
+/* Creates a subtle shadow */
+box-shadow: 0 2px 5px rgba(235, 217, 217, 0.15);
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+}
+
+
+/*---------------------------------------------------------------
+ABOUT / CONTENT PAGE
+---------------------------------------------------------------*/
+
+.content {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.content h2 {
+    margin-bottom: 15px;
+}
+
+.content p {
+    margin-bottom: 20px;
+}
+
+/* Style the unordered list */
+.content ul {
+    margin-left: 25px;
+
+}
+
+/* Style the stars in reviews */
+.highlight-text {
+    color: #ffd700; /* Gold color for stars */
+    font-size: 20px;
+}
+
+.highlight-topics {
+    color: white; /* Dark blue color for topics */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*---------------------------------------------------------------
+CONTACT FORM
+---------------------------------------------------------------*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+form label {
+    margin-bottom: 5px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Set a reasonable height for the message box */
+form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Submit button */
+form button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #123556;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Submit button hover effect */
+form button:hover {
+    background-color: #1d5d9b;
+}
+
+/*---------------------------------------------------------------
+FOOTER
+---------------------------------------------------------------*/
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/*---------------------------------------------------------------
+RESPONSIVE DESIGN
+---------------------------------------------------------------*/
+
+/* These styles apply to smaller screens */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .content {
+        margin: 20px;
+        padding: 25px;
+    }
+
+    .service-card {
+        width: 100%;
+    }
+
+}
+
